@@ -624,7 +624,7 @@ a {
 
 .section-3 .inner-wrap {
     display: flex;
-    background-image: url(/project01/assets/images/Banner.svg);
+    background-image: url(/assets/images/Banner.svg);
     justify-content: space-between;
     border-radius: 20px;
     background-repeat: no-repeat;
@@ -715,7 +715,7 @@ a {
 
     .section-3 .inner-wrap {
         flex-wrap: wrap;
-        background-image: url(/project01/assets/images/banner1.svg);
+        background-image: url(/assets/images/banner1.svg);
         padding-top: 20px;
     }
 
