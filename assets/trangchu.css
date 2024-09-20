@@ -1,1085 +1,483 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-:root {
-    --color-main: #003459;
-    --color-text-light: #667479;
-    --color-text-dark: #00171F;
-    --font: "Be Vietnam Pro", sans-serif;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    line-height: 1.4;
-    font-family: var(--font);
-    background-color: #FDFDFD;
-}
-
-.container {
-    width: 1180px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@media (max-width: 1199.98px) {
-    .container {
-        width: 960px;
-    }
-}
-
-@media (max-width: 991.98px) {
-    .container {
-        width: 720px;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .container {
-        width: 540px;
-    }
-}
-
-@media (max-width: 575.98px) {
-    .container {
-        width: 100%;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-}
-
-
-a {
-    text-decoration: none;
-}
-
-
-.button {
-    display: inline-flex;
-    align-items: center;
-    height: 44px;
-    padding: 0 28px;
-    color: #FDFDFD;
-    font-weight: 700;
-    font-size: 16px;
-    background-color: var(--color-main);
-    border-radius: 57px;
-}
-
-.outline-button {
-    display: inline-flex;
-    align-items: center;
-    height: 48px;
-    padding: 12px 28px;
-    color: var(--color-main);
-    font-weight: 500;
-    font-size: 16px;
-    background-color: transparent;
-    border-radius: 57px;
-    border: 1.5px solid var(--color-main);
-    text-wrap: nowrap;
-}
-
-.outline-button:hover {
-    transition: all 0.3s;
-    background-color: #00ADEF;
-    color: white;
-    border-color: white;
-
-    i {
-        color: white;
-        transition: all 0.3s;
-    }
-}
-
-.outline-button i {
-    font-size: 18px;
-    color: var(--color-main);
-    margin-left: 11px;
-}
-
-.solid-button {
-    background-color: var(--color-main);
-    color: white;
-    padding: 12px 28px;
-    display: inline-flex;
-    align-items: center;
-    height: 48px;
-    font-weight: 500;
-    text-wrap: nowrap;
-}
-
-.solid-button:hover {
-    background-color: #00ADEF;
-    transition: all 0.3s;
-}
-
-.header {
-    padding: 28px 0;
-    position: relative;
-    z-index: 999;
-}
-
-.header .inner-wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 14px;
-}
-
-.header .inner-search-mobile,
-.header .inner-menu-mobile {
-    display: none;
-}
-
-.header .logo img {
-    height: 40px;
-    width: auto;
-}
-
-.header .menu {
-    flex: 1;
-    text-align: center;
-}
-
-.header .menu ul {
-    list-style: none;
-    display: inline-flex;
-    padding: 0;
-    margin: 0;
-    gap: 48px;
-}
-
-.header .menu ul li a {
-    color: var(--color-main);
-    font-size: 16.5px;
-    font-weight: 700;
-}
-
-.header .inner-form {
-    height: 44px;
-    background-color: #F3F3F3;
-    border-radius: 46px;
-    width: 280px;
-    padding: 0 16px;
-    display: inline-flex;
-    gap: 12px;
-}
-
-.header .inner-form input {
-    outline: none;
-    border: none;
-    background-color: transparent;
-    flex: 1;
-    height: 100%;
-    order: 1;
-}
-
-.header .inner-form button {
-    outline: none;
-    border: none;
-    background-color: transparent;
-    color: var(--color-text-light);
-    font-size: 16px;
-    order: 0;
-}
-
-.header .button-join {
-    height: 44px;
-    border-radius: 57px;
-    padding: 0 28px;
-    background-color: var(--color-main);
-    color: white;
-    font-size: 16px;
-    font-weight: 700;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.header .button-join:hover {
-    background-color: #00ADEF;
-    transition: all 0.3s;
-}
-
-@media (max-width: 1199.98px) {
-    .header .button-join {
-        display: none;
-    }
-}
-
-@media (max-width: 991.98px) {
-    .header .inner-form {
-        display: none;
-    }
-
-    .header .inner-wrap .inner-search-mobile {
-        display: inline-flex;
-        font-size: 23px;
-        color: var(--color-text-dark);
-    }
-}
-
-@media (max-width: 767.98px) {
-    .header .menu {
-        display: none;
-    }
-
-    .header .inner-wrap .inner-menu-mobile {
-        display: inline-flex;
-        font-size: 23px;
-        color: var(--color-text-dark);
-    }
-
-    .header .logo img {
-        height: 32px;
-        width: auto;
-    }
-
-    .header {
-        padding: 12.5px 0;
-    }
-}
-
-.section-1 {
-    background: linear-gradient(102.87deg, #FCEED5 6.43%, #FCEED5 78.33%, #FFE7BA 104.24%);
-    margin-top: -102px;
-    padding-top: 102px;
-    border-radius: 0 0 40px 40px;
-    overflow: hidden;
-}
-
-.section-1 .inner-wrap {
-    display: flex;
-}
-
-.section-1 .inner-content {
-    width: 50%;
-    padding-right: 76px;
-    padding-top: 80px;
-    position: relative;
-}
-
-.section-1 .inner-content .inner-bg-1 {
-    position: absolute;
-    top: 75px;
-    left: 0px;
-}
-
-.section-1 .inner-content .inner-bg-2 {
-    position: absolute;
-    bottom: 0;
-    right: -50px;
-}
-
-.section-1 .inner-content .inner-bg-3 {
-    position: absolute;
-    top: -110px;
-    left: -130px;
-}
-
-.section-1 .inner-image .inner-bg-4 {
-    position: absolute;
-    bottom: 0;
-    left: -120px;
-}
-
-.section-1 .inner-content .inner-title {
-    margin-top: 0;
-    margin-bottom: 24px;
-    font-weight: 700;
-    color: #002A48;
-    position: relative;
-}
-
-.section-1 .inner-content .inner-title-main {
-    font-size: 60px;
-}
-
-.section-1 .inner-content .inner-title-sub {
-    font-size: 46px;
-}
-
-.section-1 .inner-content .desc {
-    font-size: 16px;
-    font-weight: 500;
-    color: #242B33;
-}
-
-.section-1 .inner-image {
-    width: 50%;
-    padding-right: 74px;
-    position: relative;
-}
-
-
-.section-1 .inner-content .inner-buttons {
-    display: flex;
-    gap: 18px;
-    margin-top: 34px;
-}
-
-.section-1 .inner-image .inner-img-main {
-    width: 100%;
-    height: auto;
-    display: block;
-    position: relative;
-}
-
-@media (max-width: 1199.98px) {
-    .section-1 .inner-content .inner-bg-2 {
-        display: none;
-    }
-
-    .section-1 .inner-content .inner-title-main {
-        font-size: 50px;
-    }
-
-    .section-1 .inner-content .inner-title-sub {
-        font-size: 38px;
-    }
-
-    .section-1 .inner-content .inner-title .desc {
-        font-size: 16px;
-    }
-
-    .section-1 .inner-image .inner-bg-4 {
-        bottom: -90px;
-        left: -100px;
-    }
-}
-
-@media (max-width: 991.98px) {
-    .section-1 .inner-wrap {
-        flex-wrap: wrap;
-    }
-
-    .section-1 .inner-content {
-        width: 100%;
-        padding-top: 35px;
-        padding-right: 0;
-    }
-
-    .section-1 .inner-image {
-        width: 100%;
-        padding-right: 0;
-        margin-top: 25px;
-    }
-
-    .section-1 .inner-content .inner-bg-1 {
-        display: none;
-    }
-
-    .section-1 .inner-image .inner-bg-4 {
-        bottom: 0px;
-        left: -50px;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .section-1 .inner-image .inner-bg-4 {
-        left: -20px;
-    }
-
-    .section-1 .inner-content .inner-bg-3 {
-        left: 15%;
-    }
-
-    .section-1 .inner-content .inner-title-main {
-        font-size: 46px;
-    }
-
-    .section-1 .inner-content .inner-title-sub {
-        font-size: 28px;
-    }
-
-    .section-1 .inner-content .desc {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 575.98px) {
-    .section-1 {
-        border-radius: 0 0 20px 20px;
-    }
-
-    .section-1 .inner-image .inner-bg-4 {
-        bottom: -115px;
-        left: -30px;
-    }
-
-    .section-1 .inner-content {
-        z-index: 1;
-    }
-
-    .section-1 .inner-content .inner-title {
-        margin-bottom: 12px;
-    }
-
-    .section-1 .inner-content .inner-desc {
-        margin-bottom: 32px;
-    }
-
-    .section-1 .inner-content .inner-bg-3 {
-        left: 1%;
-    }
-}
-
-.box-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 28px;
-}
-
-.box-title .title-1 {
-    font-size: 16px;
-    font-weight: 500px;
-    color: #000000;
-    margin-bottom: 2px;
-}
-
-.box-title .title-2 {
-    font-size: 24px;
-    font-weight: 700px;
-    color: var(--color-main);
-    text-transform: capitalize;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.box-title .inner-right .inner-button,
-.box-title .inner-right-mobile .inner-button {
-    color: var(--color-main);
-    background-color: transparent;
-    border: 1.5px solid var(--color-main);
-    padding: 0px 28px;
-    border-radius: 57px;
-    height: 44px;
-    display: inline-flex;
-    gap: 8px;
-    align-items: center;
-    font-weight: 500;
-    font-size: 14px;
-}
-
-.box-title .inner-right .inner-button:hover,
-.box-title .inner-right-mobile .inner-button:hover {
-    background-color: #00ADEF;
-    border-color: white;
-    transition: all 0.3s;
-    color: white;
-}
-
-.box-title .inner-right-mobile {
-    display: none;
-}
-
-@media (max-width: 767.98px) {
-    .box-title .inner-right {
-        display: none;
-    }
-
-    .box-title .inner-right-mobile {
-        display: block;
-        margin-top: 16px;
-        width: 100%;
-    }
-
-    .box-title .inner-right-mobile .inner-button {
-        margin-top: 16px;
-        width: 100%;
-        justify-content: center;
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 575.98px) {
-    .box-title .title-1 {
-        font-size: 14px;
-    }
-
-    .box-title .title-2 {
-        font-size: 20px;
-    }
-}
-
-.section-2 {
-    padding: 60px 0;
-}
-
-.section-2 .inner-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.section-2 .inner-wrap .product-item {
-    width: calc((100% - 60px)/4);
-}
-
-@media (max-width: 1199.98px) {
-    .section-2 .inner-wrap .product-item {
-        width: calc((100% - 40px)/3);
-    }
-}
-
-@media (max-width: 991.98px) {
-    .section-2 .inner-wrap .product-item {
-        width: calc((100% - 20px)/2);
-    }
-}
-
-.product-item {
-    background-color: #FDFDFD;
-    padding: 8px 8px 0 8px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 28px -2px #00000014;
-}
-
-.product-item:hover {
-    background-color: #FAE6C2;
-    transition: all 0.3s;
-}
-
-.product-item .inner-img {
-    border-radius: 10px;
-    overflow: hidden;
-    margin-bottom: 8px;
-}
-
-.product-item .inner-img img {
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    width: 100%;
-    display: block;
-}
-
-
-.product-item .inner-content {
-    padding: 8px 8px 20px 8px;
-}
-
-.product-item .inner-content .inner-title {
-    margin-top: 0;
-    margin-bottom: 4px;
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--color-text-dark);
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    display: -webkit-box;
-}
-
-
-.product-item .inner-content .inner-info {
-    margin-bottom: 4px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px 26px;
-}
-
-.product-item .inner-content .inner-info .inner-info-item {
-    color: var(--color-text-light);
-    font-size: 12px;
-    position: relative;
-    font-weight: 500;
-}
-
-.product-item .inner-content .inner-info .inner-info-item b {
-    font-weight: 700;
-}
-
-.product-item .inner-content .inner-info .inner-info-item::after {
-    content: "";
-    border-radius: 50%;
-    width: 3px;
-    height: 3px;
-    display: inline-block;
-    background-color: var(--color-text-light);
-    position: absolute;
-    top: 6px;
-    right: -15px;
-}
-
-.product-item .inner-content .inner-info .inner-info-item:last-child::after {
-    display: none;
-}
-
-.product-item .inner-content .inner-price {
-    font-size: 14px;
-    font-weight: 700;
-    color: var(--color-text-dark);
-}
-
-@media (max-width: 575.98px) {
-    .product-item .inner-content .inner-info .inner-info-item::after {
-        display: none;
-    }
-}
-
-.section-3 .inner-wrap {
-    display: flex;
-    background-image: url(/assets/images/Banner.svg);
-    justify-content: space-between;
-    border-radius: 20px;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
-}
-
-.section-3 .inner-img-main {
-    width: 40%;
-    margin-left: 20px;
-    margin-top: 36px;
-    position: relative;
-}
-
-.section-3 .inner-img-main img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.section-3 .inner-content {
-    width: 34%;
-    text-align: right;
-    margin-top: 58px;
-    margin-right: 85px;
-    position: relative;
-}
-
-.section-3 .inner-title {
-    margin-top: 0;
-    margin-bottom: 8px;
-    font-weight: 700;
-    color: var(--color-main);
-}
-
-.section-3 .inner-title .inner-title-main {
-    font-size: 52px;
-    margin-top: 8px;
-}
-
-.section-3 .inner-content .inner-desc {
-    font-size: 12px;
-    font-weight: 500;
-    color: #242B33;
-    margin-bottom: 24px;
-}
-
-.section-3 .inner-content .inner-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    gap: 10px 18px;
-}
-
-.section-3 .inner-title .inner-title-sub {
-    font-size: 36px;
-}
-
-@media (max-width: 1199.98px) {
-    .section-3 .inner-title .inner-title-main {
-        font-size: 42px;
-    }
-
-    .section-3 .inner-title .inner-title-sub {
-        font-size: 28px;
-    }
-
-    .section-3 .inner-content .inner-buttons {
-        flex-wrap: nowrap;
-    }
-
-    .section-3 .inner-content {
-        margin-top: 24px;
-        margin-right: 30px;
-    }
-
-    .section-3 .inner-content .inner-buttons {
-        gap: 10px 13px;
-    }
-}
-
-@media (max-width: 991.98px) {
-    .section-3 .inner-title .inner-title-main {
-        font-size: 36px;
-        margin: 0;
-    }
-
-    .section-3 .inner-wrap {
-        flex-wrap: wrap;
-        background-image: url(../images/banner1.svg);
-        padding-top: 32px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .section-3 .inner-img-main {
-        width: 100%;
-        order: 1;
-    }
-
-    .section-3 .inner-content {
-        width: 100%;
-        order: 0;
-        margin: 0;
-        text-align: center;
-    }
-
-    .section-3 .inner-content .inner-buttons {
-        justify-content: center;
-    }
-}
-
-.section-4 {
-    padding: 60px 0;
-}
-
-.section-4 .inner-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.section-4 .blog-item {
-    width: calc((100% - 40px) / 3);
-}
-
-@media (max-width: 991.98px) {
-    .section-4 .blog-item {
-        width: calc((100% - 20px) / 2);
-    }
-}
-
-@media (max-width: 575.98px) {
-    .section-4 .blog-item {
-        width: 100%;
-    }
-}
-
-.blog-item {
-    border-radius: 12px;
-    padding: 8px;
-    box-shadow: 0px 4px 28px -2px #00000014;
-    background-color: #FDFDFD;
-}
-
-.blog-item:hover {
-    background-color: #FAE6C2;
-    transition: all 0.3s;
-}
-
-.blog-item .inner-img-item {
-    overflow: hidden;
-    margin-bottom: 8px;
-    aspect-ratio: 364/240;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-.blog-item .inner-img-item img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    display: block;
-}
-
-.blog-item .inner-content {
-    padding: 8px;
-}
-
-.blog-item .inner-content .inner-button {
-    height: 20px;
-    padding: 2px 10px;
-    border-radius: 28px;
-    font-size: 10px;
-    font-weight: 700;
-    color: #FDFDFD;
-    background-color: #00A7E7;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.blog-item .inner-content .inner-title {
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--color-text-dark);
-    margin-bottom: 6px;
-}
-
-.blog-item .inner-content .inner-detail {
-    margin: 0;
-    font-size: 14px;
-    font-weight: 400;
-    color: #242B33;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    display: -webkit-box;
-}
-
-.blog-item .inner-content .four-lines {
-    -webkit-line-clamp: 4;
-}
-
-.footer {
-    background: linear-gradient(102.87deg, #FCEED5 6.43%, #FCEED5 78.33%, #FFE7BA 104.24%);
-    padding-top: 80px;
-    padding-bottom: 40px;
-}
-
-.footer .inner-box-1 {
-    border-radius: 16px;
-    background-color: var(--color-main);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 32px;
-    gap: 20px;
-}
-
-.footer .inner-box-1 .inner-title {
-    color: #FDFDFD;
-    font-size: 20px;
-    font-weight: 700;
-    text-transform: capitalize;
-    border-radius: 16px;
-    text-wrap: wrap;
-    width: 32%;
-}
-
-.footer .inner-box-1 .inner-form {
-    width: 62%;
-    background-color: #ffffff;
-    padding: 12px;
-    display: flex;
-    border-radius: 14px;
-    gap: 12px;
-}
-
-.footer .inner-box-1 .inner-form input {
-    border: 1px solid #99A2A5;
-    padding: 0 28px;
-    border-radius: 8px;
-    flex: 1;
-    outline: none;
-    background-color: transparent;
-}
-
-.footer .inner-box-1 .inner-form input::placeholder {
-    font-weight: 500;
-    font-size: 14px;
-    color: #99A2A5;
-}
-
-.footer .inner-box-1 .inner-form button {
-    background-color: var(--color-main);
-    border-radius: 8px;
-    padding: 0 28px;
-    color: #FDFDFD;
-    font-size: 16px;
-    font-weight: 500;
-    height: 48px;
-    text-transform: capitalize;
-    cursor: pointer;
-    border: none;
-}
-
-.footer .inner-box-1 .inner-form button:hover {
-    background-color: #00ADEF;
-    transition: all 0.3s;
-}
-
-
-.footer .inner-box-2 {
-    display: flex;
-    padding: 40px 0;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #CCD1D2;
-}
-
-.footer .inner-box-2 .menu ul {
-    list-style: none;
-    display: flex;
-    text-transform: capitalize;
-    align-items: center;
-    gap: 10px 60px;
-    padding: 0;
-}
-
-.footer .inner-box-2 .menu ul li a {
-    color: var(--color-text-dark);
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.footer .inner-box-2 .social ul {
-    display: flex;
-    list-style: none;
-    gap: 10px 40px;
-    font-size: 24px;
-    align-items: center;
-    padding: 0;
-}
-
-.footer .inner-box-2 .social a {
-    color: var(--color-text-dark);
-}
-
-.footer .inner-box-3 {
-    margin-top: 40px;
-    display: flex;
-    align-items: center;
-}
-
-.footer .inner-box-3 .copyright {
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--color-text-light);
-    width: 40%;
-}
-
-.footer .inner-box-3 .logo {
-    width: 20%;
-    text-align: center;
-}
-
-.footer .inner-box-3 .logo img {
-    height: auto;
-    width: 115px;
-}
-
-.footer .inner-box-3 .provision {
-    width: 40%;
-}
-
-.footer .inner-box-3 .provision ul {
-    display: flex;
-    gap: 32px;
-    list-style: none;
-    padding: 0;
-    justify-content: flex-end;
-}
-
-.footer .inner-box-3 .provision a {
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--color-text-light);
-}
-
-@media (max-width: 991.98px) {
-    .footer {
-        padding-top: 40px;
-        border-radius: 20px;
-        padding-bottom: 16px;
-    }
-
-    .footer .inner-box-1 {
-        flex-wrap: wrap;
-    }
-
-    .footer .inner-box-1 .inner-title {
-        width: 100%;
-    }
-
-    .footer .inner-box-1 .inner-form {
-        width: 100%;
-    }
-
-    .footer .inner-box-2 {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .footer .inner-box-2 .menu {
-        width: 100%;
-    }
-
-    .footer .inner-box-2 .menu ul {
-        justify-content: center;
-    }
-
-    .footer .inner-box-3 {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .footer .inner-box-3 .copyright {
-        width: 100%;
-        text-align: center;
-        order: 2;
-    }
-
-    .footer .inner-box-3 .logo {
-        width: 100%;
-        order: 0;
-        margin-bottom: 32px;
-    }
-
-    .footer .inner-box-3 .provision {
-        width: 100%;
-        order: 1;
-    }
-
-    .footer .inner-box-3 .provision ul {
-        justify-content: center;
-        margin-top: 0;
-        margin-bottom: 12px;
-    }
-
-    .footer .inner-box-3 .provision a {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .footer .inner-box-1 .inner-form {
-        flex-wrap: wrap;
-    }
-
-    .footer .inner-box-1 .inner-form input {
-        width: 100%;
-        flex: none;
-        height: 48px;
-    }
-
-    .footer .inner-box-1 .inner-form a {
-        width: 100%;
-    }
-
-    .footer .inner-box-1 .inner-form button {
-        width: 100%;
-    }
-}
-
-@media (max-width: 575.98px) {
-    .footer .inner-box-1 .inner-title {
-        font-size: 20px;
-    }
-
-    .footer .inner-box-2 .menu ul li a {
-        font-size: 13px;
-    }
-
-    .footer .inner-box-2 .menu ul {
-        font-size: 20px;
-        gap: 40px;
-    }
-
-    .footer .inner-box-2 .social ul {
-        gap: 40px;
-        font-size: 20px;
-    }
-
-}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 - Trang chủ</title>
+    <link rel="stylesheet" href="/project01/assets/trangchu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="inner-wrap">
+                <div class="inner-menu-mobile">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="/project01/assets/images/Frame.svg" alt="monito-logo">
+                    </a>
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a href="#">Trang Chủ</a>
+                        </li>
+                        <li>
+                            <a href="#">Danh mục</a>
+                        </li>
+                        <li>
+                            <a href="#">Giới Thiệu</a>
+                        </li>
+                        <li>
+                            <a href="#">Liên hệ</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="inner-search-mobile">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <form action="#" class="inner-form">
+                    <input name="keyword" placeholder="Nhập từ khóa...">
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+                <a class="button-join" href="#" target="_blank">Tham Gia Cộng Đồng</a>
+            </div>
+    </header>
+    <div class="section-1">
+        <div class="container">
+            <div class="inner-wrap">
+                <div class="inner-content">
+                    <div class="inner-bg-1">
+                        <img src="/project01/assets/images/Rectangle 3.svg" alt="">
+                    </div>
+                    <div class="inner-bg-2">
+                        <img src="/project01/assets/images/Rectangle 8.svg" alt="">
+                    </div>
+                    <div class="inner-bg-3">
+                        <img src="/project01/assets/images/Rectangle 9.svg" alt="">
+                    </div>
+                    <h1 class="inner-title">
+                        <div class="inner-title-main">Thêm Một Bạn</div>
+                        <div class="inner-title-sub">Thêm ngàn niềm vui!</div>
+                    </h1>
+                    <p class="desc">
+                        Có một con thú cưng đồng nghĩa với việc bạn có thêm niềm vui mới. Chúng tôi có hơn 200 con thú
+                        cưng khác nhau có thể đáp ứng nhu cầu của bạn!
+                    </p>
+                    <div class="inner-buttons">
+                        <a class="outline-button button" href="#">
+                            Giới Thiệu<i class="fa-regular fa-circle-play"></i>
+                        </a>
+                        <a class="solid-button button" href="#">
+                            Khám Phá Ngay
+                        </a>
+                    </div>
+                </div>
+                <div class="inner-image">
+                    <img class="inner-bg-4" src="/project01/assets/images/Group 2.svg" alt="">
+                    <img class="inner-img-main"
+                        src="/project01/assets/images/good-humored-woman-holds-dog-laughing-pink-background-emotional-sort-haired-girl-grey-hoodie-poses-with-corgi-isolated 1.png"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-2">
+        <div class="container">
+            <div class="box-title">
+                <div class="inner-left">
+                    <div class="title-1">Có gì mới?</div>
+                    <h2 class="title-2">
+                        Một số vật nuôi của chúng tôi
+                    </h2>
+                </div>
+                <div class="inner-right">
+                    <a class="inner-button" href="#">Xem thêm<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="inner-wrap">
+                <div class="product-item">
+                    <a href="">
+                        <div class="inner-img">
+                            <img src="/project01/assets/images/image 1.jpg" alt="">
+                        </div>
+                        <div class="inner-content">
+                            <h3 class="inner-title">
+                                MO231 - Pomeranian Trắng
+                            </h3>
+                            <div class="inner-info">
+                                <div class="inner-info-item">
+                                    Giống: <b>Đực</b>
+                                </div>
+                                <div class="inner-info-item">
+                                    Tuổi: <b>02 tháng</b>
+                                </div>
+                            </div>
+                            <div class="inner-price">
+                                6.900.000 VND
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-item">
+                    <a href="#">
+                        <div class="inner-img">
+                            <img src="/project01/assets/images/image 2.jpg" alt="">
+                        </div>
+                        <div class="inner-content">
+                            <h3 class="inner-title">
+                                MO502 - Poodle Tiny Vàng
+                            </h3>
+                            <div class="inner-info">
+                                <div class="inner-info-item">
+                                    Giống: <b>Cái</b>
+                                </div>
+                                <div class="inner-info-item">
+                                    Tuổi: <b>02 tháng</b>
+                                </div>
+                            </div>
+                            <div class="inner-price">
+                                3.900.000 VND
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-item">
+                    <a href="#">
+                        <div class="inner-img">
+                            <img src="/project01/assets/images/image 3.jpg" alt="">
+                        </div>
+                        <div class="inner-content">
+                            <h3 class="inner-title">
+                                MO102 - Poodle Tiny Sepia
+                            </h3>
+                            <div class="inner-info">
+                                <div class="inner-info-item">
+                                    Giống: <b>Đực</b>
+                                </div>
+                                <div class="inner-info-item">
+                                    Tuổi: <b>02 tháng</b>
+                                </div>
+                            </div>
+                            <div class="inner-price">
+                                4.000.000 VND
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="product-item">
+                    <a href="#">
+                        <div class="inner-img">
+                            <img src="/project01/assets/images/image 4.jpg" alt="">
+                        </div>
+                        <div class="inner-content">
+                            <h3 class="inner-title">
+                                MO512 - Alaskan Malamute
+                            </h3>
+                            <div class="inner-info">
+                                <div class="inner-info-item">
+                                    Giống: <b>Đực</b>
+                                </div>
+                                <div class="inner-info-item">
+                                    Tuổi: <b>03 tháng</b>
+                                </div>
+                            </div>
+                            <div class="inner-price">
+                                8.900.000 VND
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-item">
+                    <a href="#">
+                        <div class="inner-img">
+                            <img src="/project01/assets/images/image 5.jpg" alt="">
+                        </div>
+                        <div class="inner-content">
+                            <h3 class="inner-title">
+                                MO231 - Pembroke Corgi
+                            </h3>
+                            <div class="inner-info">
+                                <div class="inner-info-item">
+                                    Giống: <b>Đực</b>
+                                </div>
+                                <div class="inner-info-item">
+                                    Tuổi: <b>02 tháng</b>
+                                </div>
+                            </div>
+                            <div class="inner-price">
+                                7.900.000 VND
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-item">
+                    <a href="#">
+                        <div class="inner-img">
+                            <img src="/project01/assets/images/image 6.jpg" alt="">
+                        </div>
+                        <div class="inner-content">
+                            <h3 class="inner-title">
+                                MO502 - Pembroke Corgi
+                            </h3>
+                            <div class="inner-info">
+                                <div class="inner-info-item">
+                                    Giống: <b>Cái</b>
+                                </div>
+                                <div class="inner-info-item">
+                                    Tuổi: <b>02 tháng</b>
+                                </div>
+                            </div>
+                            <div class="inner-price">
+                                9.000.000 VND
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-item">
+                    <a href="#">
+                        <div class="inner-img">
+                            <img src="/project01/assets/images/image 7.jpg" alt="">
+                        </div>
+                        <div class="inner-content">
+                            <h3 class="inner-title">
+                                MO231 - Pomeranian Trắng
+                            </h3>
+                            <div class="inner-info">
+                                <div class="inner-info-item">
+                                    Giống: <b>Cái</b>
+                                </div>
+                                <div class="inner-info-item">
+                                    Tuổi: <b>02 tháng</b>
+                                </div>
+                            </div>
+                            <div class="inner-price">
+                                6.500.000 VND
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-item">
+                    <a href="#">
+                        <div class="inner-img">
+                            <img src="/project01/assets/images/image 8.jpg" alt="">
+                        </div>
+                        <div class="inner-content">
+                            <h3 class="inner-title">
+                                MO512 - Poodle Tiny
+                            </h3>
+                            <div class="inner-info">
+                                <div class="inner-info-item">
+                                    Giống: <b>Đực</b>
+                                </div>
+                                <div class="inner-info-item">
+                                    Tuổi: <b>02 tháng</b>
+                                </div>
+                            </div>
+                            <div class="inner-price">
+                                5.000.000 VND
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="box-title">
+                <div class="inner-right-mobile">
+                    <a class="inner-button" href="#">Xem thêm<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-3">
+        <div class="container">
+            <div class="inner-wrap">
+                <div class="inner-img-main">
+                    <img src="/project01/assets/images/horizontal-shot-adult-girl-jeans-overalls-kissing-cute-puppy-while-raising-it-air-young-girl-being-love-with-her-dog-clothed-trendy-jumper-display-affection 3.png"
+                        alt="">
+                </div>
+                <div class="inner-content">
+                    <h1 class="inner-title">
+                        <div class="inner-title-main">Thêm Một Bạn</div>
+                        <div class="inner-title-sub">Thêm ngàn niềm vui!</div>
+                    </h1>
+                    <div class="inner-desc">
+                        Có một con thú cưng đồng nghĩa với việc bạn có thêm niềm vui mới. Chúng tôi có hơn 200 con thú
+                        cưng khác nhau có thể đáp ứng nhu cầu của bạn!
+                    </div>
+                    <div class="inner-buttons">
+                        <a class="outline-button button" href="#">
+                            Giới Thiệu<i class="fa-regular fa-circle-play"></i>
+                        </a>
+                        <a class="solid-button button" href="#">
+                            Khám Phá Ngay
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-4">
+        <div class="container">
+            <div class="box-title">
+                <div class="inner-left">
+                    <div class="title-1">Có gì mới?</div>
+                    <h2 class="title-2">
+                        Một số vật nuôi của chúng tôi
+                    </h2>
+                </div>
+                <div class="inner-right">
+                    <a class="inner-button" href="#">Xem thêm<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="inner-wrap">
+                <div class="blog-item">
+                    <a href="#">
+                        <div class="inner-img-item">
+                            <img src="/project01/assets/images/image 9.jpg" alt="">
+                        </div>
+                        <div class="inner-content">
+                            <div class="inner-button">
+                                Kiến thức thú cưng
+                            </div>
+                            <div class="inner-title">
+                                Pomeranian là gì? Cách nhận biết chó Pomeranian
+                            </div>
+                            <p class="inner-detail">
+                                Pomeranian hay còn gọi là chó Pomeranian (chó Pom) luôn nằm trong top những thú cưng dễ
+                                thương nhất. Không chỉ vậy, giống chó xiếc nhỏ nhắn, đáng yêu, thông minh, thân thiện và
+                                khéo léo.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="blog-item">
+                    <a href="#">
+                        <div class="inner-img-item">
+                            <img src="/project01/assets/images/image 10.png" alt="">
+                        </div>
+                        <div class="inner-content">
+                            <div class="inner-button">
+                                Kiến thức thú cưng
+                            </div>
+                            <div class="inner-title">
+                                Chế độ ăn cho chó bạn cần biết
+                            </div>
+                            <p class="inner-detail four-lines">
+                                Việc chia khẩu phần ăn cho chó thoạt nghe có vẻ đơn giản nhưng có một số quy tắc bạn nên
+                                biết để chó cưng dễ dàng hấp thụ các chất dinh dưỡng trong khẩu phần ăn. Dành cho những
+                                người mới bắt đầu nuôi chó, đặc biệt là chó con mới sinh có sức đề kháng tương đối yếu.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="blog-item">
+                    <a href="#">
+                        <div class="inner-img-item">
+                            <img src="/project01/assets/images/image 11.png" alt="">
+                        </div>
+                        <div class="inner-content">
+                            <div class="inner-button">
+                                Kiến thức thú cưng
+                            </div>
+                            <div class="inner-title">
+                                Tại sao chó cắn phá đồ đạc và cách phòng ngừa hiệu quả
+                            </div>
+                            <p class="inner-detail">
+                                Chó cắn là hiện tượng phổ biến trong quá trình phát triển. Tuy nhiên, không ai muốn thấy
+                                đồ đạc, vật dụng quan trọng của mình bị chó cắn.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="box-title">
+                <div class="inner-right-mobile">
+                    <a class="inner-button" href="#">Xem thêm<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="inner-wrap">
+                <div class="inner-box-1">
+                    <div class="inner-title">
+                        Đăng ký ngay để không bỏ lỡ các chương trình của chúng tôi
+                    </div>
+                    <form action="#" class="inner-form" name="" target="_blank">
+                        <input type="email" placeholder="Nhập email của bạn...">
+                        <a href="#">
+                            <button>đăng kí ngay</button>
+                        </a>
+                    </form>
+                </div>
+                <div class="inner-box-2">
+                    <nav class="menu">
+                        <ul>
+                            <li>
+                                <a href="index.html">trang chủ</a>
+                            </li>
+                            <li>
+                                <a href="#">danh mục</a>
+                            </li>
+                            <li>
+                                <a href="#">giới thiệu</a>
+                            </li>
+                            <li>
+                                <a href="#">liên hệ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="social">
+                        <ul>
+                            <li>
+                                <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="inner-box-3">
+                    <nav class="copyright">
+                        © 2023 28Tech. All rights reserved.
+                    </nav>
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="/project01/assets/images/Frame.svg" alt="">
+                        </a>
+                    </div>
+                    <nav class="provision">
+                        <ul>
+                            <li>
+                                <a href="#">Điều khoản dịch vụ</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Chính sách bảo mật
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
